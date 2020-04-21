@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script defer src="http://use.fontawesome.com/releases/v5.0.9/js/all.js"
+    integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyL1Ad4snFpC1/SnyUjRrbdJsw1pGIl"
+    crossorigin="anonymous"></script>
+
+    <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <title class="main-title" id="hometb">Perl Taprobane</title>
+    </head>
+
+    <body id="home" class="scrollspy">
+      <!--Navbar-->
+      <div class="navbar-fixed">
+        <nav class="teal">
+          <div class="container">
+            <div class="nav-wrapper">
+              <a href="#" class="brand-logo">Perl Taprobane</a>
+              <a href="#" data-target="mobile-nav" class="sidenav-trigger">
+                <i class="material-icons">menu</i>
+              </a>
+              <ul class="right hide-on-med-and-down">
+                <li>
+                  <a href="#hometb">Home</a>
+                </li>
+                <li>
+                  <a href="#aboutsl">About Sri Lanka</a>
+                </li>
+                <li>
+                  <a href="#Tour packages">Tour packages</a>
+                </li>
+                <li>
+                  <a href="#Testimonials">Testimonials</a>
+                </li>
+                <li>
+                  <a href="#About Us">About Us</a>
+                </li>
+                
+              </ul>
+            </div>
+          </div>
+
+        </nav>
+      </div>
+      <ul class="sidenav" id="mobile-nav">
+        <li>
+          <a href="#hometb">Home</a>
+        </li>
+        <li>
+          <a href="#aboutsl">About Sri Lanka</a>
+        </li>
+        <li>
+          <a href="#Tour packages">Tour packages</a>
+        </li>
+        <li>
+          <a href="#Testimonials">Testimonials</a>
+        </li>
+        <li>
+          <a href="#About Us">About Us</a>
+        </li> 
+      </ul>
+      <!--Section: Slider -->
+      <section class="slider">
+        <ul class="slides">
+          <li>
+            <img src="img/resort1.jpg"> <!-- random image -->
+            <div class="caption center-align">
+              <h2>Take Your Dream Vacation</h2>
+              <h5 class="light grey-text text-lighten-3 hide-on-small-only">Lorem ipsum dolor sit amet consectetur,
+                 adipisicing elit. Quibusdam quod natus eveniet odio ea officiis, 
+                 minima quo veniam totam necessitatibus?</h5>
+            </div>
+          </li>
+          <li>
+            <img src="img/resort2.jpg"> <!-- random image -->
+            <div class="caption left-align">
+              <h2>We work with all Budgets</h2>
+              <h5 class="light grey-text text-lighten-3 hide-on-small-only">Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                Facere quia possimus sint impedit illum, 
+                ab accusantium nostrum quas magni qui..</h5>
+            </div>
+          </li>
+          <li>
+            <img src="img/resort3.jpg"> <!-- random image -->
+            <div class="caption right-align">
+              <h2>Group & Individual Getaways </h2>
+              <h5 class="light grey-text text-lighten-3 hide-on-small-only">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                 Delectus quod harum sit quae cumque tempora 
+                 reiciendis possimus animi at aspernatur?.</h5>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+
+     
+      <!--Section search -->
+      <section id="search" class="section section-search teal darken-1 white-text center scrollspy">
+        <div class="container">
+          <div class="row">
+            <div class="col s12">
+              <h3>Search Destinations</h3>
+              <div class="input-field">
+                <input type="text" class="white grey-text autocomplete" 
+                      id="autocomplete-input" placeholder="Sigiriya, Kandy, Anuradaphura, etc...">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section> 
+      
+      <!--About Sri lanka Section-->
+      <section class="about-sl">
+        <div>
+          <h1 class="main-topics" id="aboutsl">Sri lanka</h1>
+          <p class="topics-para">Sri Lanka (formerly Ceylon) is an island nation south of India in the Indian Ocean.
+             The total land area is 65,610 sq km and is astonishingly varied.
+              A length of 445 km and breadth of 225 km encompasses beautiful tropical beaches, verdant vegetation, ancient monuments and a thousand delights to please all tastes.
+             The relief features of the island consist of a mountainous mass somewhat south of the centre, with height exceeding 2,500 meters, surrounded by broad plains. 
+             Palm fringed beaches surround the island and the sea temperature rarely fall below 27 C. It’s famed for its ancient Buddhist ruins, 
+             including the 5th-century citadel Sigiriya, with its palace and frescoes. 
+            Anuradhapura, Sri Lanka's ancient capital, has many ruins dating back more than 2,000 years.
+          </p>
+          <p class="topics-para">Sri Lanka is an idyllic landscape and a mercurial mix of opportunities, that makes it the ultimate holiday destination. Here you can experience the nation’s glittering
+             tapestry of culture, and the rich abundance of nature.
+             The entire island is teeming with bird life & exotics like elephants & leopards. 
+          </p>
+        </div>
+      </section>
+
+      
+    
+
+
+
+
+      
+      <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+     
+    <script>
+      //sidenav
+      const sideNav = document.querySelector('.sidenav');
+      M.Sidenav.init(sideNav, {});
+
+
+      //slider
+      const slider = document.querySelector('.slider');
+      M.Slider.init(slider, {
+        indicators: false,
+        height: 500,
+        transition: 500,
+        interval: 6000
+      });
+
+      //Autocomplete 
+      const ac = document.querySelector
+      ('.autocomplete')
+      M.Autocomplete.init(ac,{
+        data:{
+          "Sigiriya": null,
+          "Kandy": null,
+          "Anuradhapura": null,
+          "Polonnaruwa": null,
+          "Dambulla": null,
+          "Nuwara Elliya":null,
+          
+
+        }
+      })
+    </script>
+    </body>
+  </html> 
